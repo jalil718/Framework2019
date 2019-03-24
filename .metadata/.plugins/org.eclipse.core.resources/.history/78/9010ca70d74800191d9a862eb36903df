@@ -1,0 +1,10 @@
+package locators;
+
+public class Facebookloginlocator {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}
