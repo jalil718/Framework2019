@@ -18,17 +18,17 @@ public class LoginFacebook {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		
-		String fnloc="//input[@id='u_0_c']";
-		String lnloc="//input[@id='u_0_e']";
+//		String fnloc="//input[@id='u_0_c']";
+//		String lnloc="//input[@id='u_0_e']";
+//		
+//		String fnval="MYfirstname";
+//		String lnval="lastname";
 		
-		String fnval="MYfirstname";
-		String lnval="lastname";
+//		driver.findElement(By.xpath("fnloc")).sendKeys("fnloc");
+//		driver.findElement(By.xpath("lnloc")).sendKeys("lnval");
 		
-		driver.findElement(By.xpath("fnloc")).sendKeys("fnloc");
-		driver.findElement(By.xpath("lnloc")).sendKeys("lnval");
-		
-//		driver.findElement(By.xpath("//input[@id='u_0_c']")).sendKeys("MYfirstname");
-//		driver.findElement(By.xpath("//input[@id='u_0_e']")).sendKeys("lastname");
+		driver.findElement(By.xpath("//input[@id='u_0_c']")).sendKeys("MYfirstname");
+		driver.findElement(By.xpath("//input[@id='u_0_e']")).sendKeys("lastname");
 		
 		
 		
