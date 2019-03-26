@@ -5,10 +5,14 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class LoginFacebook {
-
-	public static void main(String[] args) {
+	
+		protected WebDriver driver=null;
+		
+		@Test
+		public void testFacebookSignup(){
 
 		System.setProperty("webdriver.chrome.driver", "C:/Users/mdjal/Documents/GitHub/Framework2019/Drivers//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
@@ -18,17 +22,19 @@ public class LoginFacebook {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		
-//		String fnloc="//input[@id='u_0_c']";
-//		String lnloc="//input[@id='u_0_e']";
-//		
-//		String fnval="MYfirstname";
-//		String lnval="lastname";
+		String fnLoc = "//input[@name='firstname']";
+		String lnLoc = "//input[@name='lastname']";
+		// Values
+		String fnVal = "fnTest";
+		String lnVal = "lnTest";
 		
-//		driver.findElement(By.xpath("fnloc")).sendKeys("fnloc");
-//		driver.findElement(By.xpath("lnloc")).sendKeys("lnval");
-		
-		driver.findElement(By.xpath("//input[@id='u_0_c']")).sendKeys("MYfirstname");
-		driver.findElement(By.xpath("//input[@id='u_0_e']")).sendKeys("lastname");
+
+		// Enter firstName
+		driver.findElement(By.xpath(fnLoc)).sendKeys(fnVal);
+		// Enter lastName
+		driver.findElement(By.xpath(lnLoc)).sendKeys(lnVal);
+
+		}	
 		
 		
 		
@@ -43,4 +49,4 @@ public class LoginFacebook {
 		
 	}
 
-}
+
