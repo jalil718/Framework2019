@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="test.facebook.LoginFacebook">
+      <class name="test.facebook.FacebookEmailandPass">
         <methods>
-          <include name="testFacebookSignup"/>
+          <include name="beforeTestStart"/>
+          <include name="testFacebookEmailPass1"/>
         </methods>
-      </class> <!-- test.facebook.LoginFacebook -->
+      </class> <!-- test.facebook.FacebookEmailandPass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

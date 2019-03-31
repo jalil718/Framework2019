@@ -2,6 +2,7 @@ package base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 
 public class Config {
@@ -18,6 +19,10 @@ public class Config {
 		// lets go to facebook.com
 		driver.get("http://www.facebook.com");
 		// maximize the window 
+	} 
+	@AfterMethod
+	public void aftereachtest(){
+		driver.close();
 	}
 		
 		
