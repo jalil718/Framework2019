@@ -51,7 +51,6 @@ public class Annotationpre {
 		@AfterMethod
 		public void afterMethod(){
 			System.out.println("AfterMethod : after each test");
-			System.out.println("");
 		}
 		
 		@AfterSuite

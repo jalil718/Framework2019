@@ -1,5 +1,7 @@
 package base;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -19,6 +21,9 @@ public class Config {
 		// lets go to facebook.com
 		driver.get("http://www.facebook.com");
 		// maximize the window 
+	driver.manage().window().maximize();
+	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
 	} 
 	@AfterMethod
 	public void aftereachtest(){
