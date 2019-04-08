@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="test.facebook.PrecticeAssert">
+      <class name="test.facebook.Priorityprec">
         <methods>
-          <include name="tryCatchTest"/>
+          <include name="gointoskiptest"/>
         </methods>
-      </class> <!-- test.facebook.PrecticeAssert -->
+      </class> <!-- test.facebook.Priorityprec -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
